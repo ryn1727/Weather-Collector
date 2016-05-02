@@ -1,21 +1,21 @@
 ##Overview
-This is a simple ruby script that will pull down current data from a Nest Thermostat and a local weather station. The data from both sources is then combined into a JSON file and stored in an object storage repository using the S3 protocol. The script runs on a loop every 5 minutes.
+This is a simple ruby script that will pull down environmental data from a Nest Thermostat and a local weather station to be used for data analytics projects. The data from both sources is then combined into a JSON file and stored in an object storage repository using the S3 protocol. The script runs on a loop every 5 minutes.
 
 ##Installation
 
-1. Sign up for the Nest Developer program and copy down the firebase URL for your thermostat.
+1. Sign up for a Nest Developer account at https://developers.nest.com/. Create a cloud device and go through the authorization process. Once completed you can use the Firebase API to access your nest thermostat. The API address to access the nest thermostat is: XXXX 
 
-2. Sign up for a Weather Underground account and get the URL for your local weather station.
+2. Sign up for a Weather Underground account at https://www.wunderground.com/weather/api/. Go through the authorization process. Once completed you can querey your local weather station using your zip code. The API address to access your local weather station is: XXXXX
 
-3. Update the credentials file with your Nest, Weather Underground, and S3 object store information
-
-4. XXXX
+3. Update the credentials file with your Nest, Weather Underground, and S3 object store information.
 
 
 ##Setup
 1. XXXXX
 
 2. XXXXX
+
+3. XXXXX
 
 
 ##Licensing
