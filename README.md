@@ -3,9 +3,9 @@ This is a simple ruby script that will pull down environmental data from a Nest 
 
 ##Installation
 
-1. Sign up for a Nest Developer account at https://developers.nest.com/. Create a cloud device and go through the authorization process. Once completed you can use the Firebase API to access your nest thermostat. The API address to access the nest thermostat is: XXXX 
+1. Sign up for a Nest Developer account at https://developers.nest.com/. Create a cloud device and go through the authorization process. Once completed you can use the Firebase API to access your nest thermostat using your authorization token. The API address to access the your Nest Thermostat is: https://firebase-apiserver08-tah01-iad01.dapi.production.nest.com:9553/devices/thermostats?auth=YOURAUTHTOKENHERE 
 
-2. Sign up for a Weather Underground account at https://www.wunderground.com/weather/api/. Go through the authorization process. Once completed you can querey your local weather station using your zip code. The API address to access your local weather station is: XXXXX
+2. Sign up for a Weather Underground account at https://www.wunderground.com/weather/api/. Go through the authorization process. Once completed you can querey your local weather station using your zip code and API key. The API address to access your local weather station is: http://api.wunderground.com/api/YOURAPIKEYHERE/features/conditions/q/YOURZIPCODEHERE.json
 
 3. Update the credentials file with your Nest, Weather Underground, and S3 object store information.
 
