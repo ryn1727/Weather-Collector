@@ -13,11 +13,14 @@ This is a simple ruby script that will pull down environmental data from a Nest 
 
 
 ##Setup
-1. XXXXX
+1. Clone the repository to your computer/server. 
 
-2. XXXXX
+2. Install Ruby v2.2 or greater.
 
-3. XXXXX
+3. Make sure the following gems are installed: openssl, json, aws/s3, colorize, net/http, time
+
+4. 
+
 
 
 ##Licensing
