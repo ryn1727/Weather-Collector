@@ -12,6 +12,9 @@ loop do
 
   #begin the data collection
   begin
+    #hide digest error message
+    $stderr = StringIO.new
+    
     #get all credentials from the credentails file
     credentials = eval(File.read("credentials.txt"))
 
