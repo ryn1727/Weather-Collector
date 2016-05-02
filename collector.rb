@@ -25,22 +25,22 @@ loop do
 	  http.use_ssl = true
 	  http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 	  response = http.get(uri.request_uri)
-	  ryans_thermostat = JSON.parse(response.body)
-	  puts "[Success] - ".green + "Pulled down API data from Ryans nest at: " + Time.now.utc.iso8601
+	  thermostat = JSON.parse(response.body)
+	  puts "[Success] - ".green + "Pulled down API data from the Nest Thermostat at: " + Time.now.utc.iso8601
 
 	  #get current data from the closest weather station to ryans house
 	  uri = URI.parse(credentials["weather_underground_api"])
 	  http = Net::HTTP.new(uri.host, uri.port)
 	  response = http.get(uri.request_uri)
-	  ryans_local_weather = JSON.parse(response.body)
-	  puts "[Success] - ".green + "Pulled down API data from Ryans local weather station at: " + Time.now.utc.iso8601
+	  local_weather = JSON.parse(response.body)
+	  puts "[Success] - ".green + "Pulled down API data from the local weather station at: " + Time.now.utc.iso8601
 
 	  #create object data
 	  content_type = "application/json"
 
 	  #make a hash of both the nest and weather station data
-	  weather_hash = {:thermostat => ryans_thermostat, :weather_station => ryans_local_weather}
-	  object_name = "ryan_data_" + Time.now.utc.iso8601
+	  weather_hash = {:thermostat => thermostat, :weather_station => local_weather}
+	  object_name = "api_data_" + Time.now.utc.iso8601
 
 	  #connect to the object store and get the container
 	  AWS::S3::Base.establish_connection!(:server => credentials["s3endpoint"], :access_key_id => credentials["s3username"], :secret_access_key => credentials["s3password"])
