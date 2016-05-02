@@ -3,13 +3,16 @@ This is a simple ruby script that will pull down environmental data from a Nest 
 
 ![img1](https://raw.githubusercontent.com/ryn1727/Weather-Collector/master/collector_running.JPG)
 
-##Installation
 
-1. Sign up for a Nest Developer account at https://developers.nest.com/. Create a cloud device and go through the authorization process. Once completed you can use the Firebase API to access your nest thermostat using your authorization token. The API address to access the your Nest Thermostat is: https://firebase-apiserver08-tah01-iad01.dapi.production.nest.com:9553/devices/thermostats?auth=YOURAUTHTOKENHERE 
+##Installation Requirements
 
-2. Sign up for a Weather Underground account at https://www.wunderground.com/weather/api/. Go through the authorization process. Once completed you can querey your local weather station using your zip code and API key. The API address to access your local weather station is: http://api.wunderground.com/api/YOURAPIKEYHERE/features/conditions/q/YOURZIPCODEHERE.json
+1. Run's on any platform or operating system that runs Ruby 2.2+.
 
-3. Update the credentials file with your Nest, Weather Underground, and S3 object store information.
+2. Sign up for a Nest Developer account at https://developers.nest.com/. Create a cloud device and go through the authorization process. Once completed you can use the Firebase API to access your nest thermostat using your authorization token. The API address to access the your Nest Thermostat is: https://firebase-apiserver08-tah01-iad01.dapi.production.nest.com:9553/devices/thermostats?auth=YOURAUTHTOKENHERE 
+
+3. Sign up for a Weather Underground account at https://www.wunderground.com/weather/api/. Go through the authorization process. Once completed you can querey your local weather station using your zip code and API key. The API address to access your local weather station is: http://api.wunderground.com/api/YOURAPIKEYHERE/features/conditions/q/YOURZIPCODEHERE.json
+
+4. Make sure you have your credentials and a bucket ready from a S3 compatible object store
 
 
 ##Setup
@@ -19,8 +22,9 @@ This is a simple ruby script that will pull down environmental data from a Nest 
 
 3. Make sure the following gems are installed: openssl, json, aws/s3, colorize, net/http, time
 
-4. 
+4. Update the credentials file with your Nest, Weather Underground, and S3 object store information.
 
+5. Run the script: "ruby collector.rb"
 
 
 ##Licensing
