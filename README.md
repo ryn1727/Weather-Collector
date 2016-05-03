@@ -6,26 +6,28 @@ This is a ruby script/application that will pull down environmental data from a 
 
 ##Installation Requirements
 
-1. Run's on any platform or operating system that has Ruby 2.2 or higher available.
+1. Run's on any platform or operating system that has Ruby 2.2 or higher available. Tested on Windows 7, Windows 2012 R2, CentOS 7.
 
-2. Sign up for a Nest Developer account at https://developers.nest.com/. Create a cloud device and go through the authorization process. Once completed you can use the Firebase API to access your nest thermostat using your authorization token. The API address to access the your Nest Thermostat is: https://firebase-apiserver08-tah01-iad01.dapi.production.nest.com:9553/devices/thermostats?auth=YOURAUTHTOKENHERE 
+2. Should work with any S3 compatible object store since a generic S3 gem is being used. Testing with Amazon AWS S3 and EMC ECS 2.0+.
 
-3. Sign up for a Weather Underground account at https://www.wunderground.com/weather/api/. Go through the authorization process. Once completed you can querey your local weather station using your zip code and API key. The API address to access your local weather station is: http://api.wunderground.com/api/YOURAPIKEYHERE/features/conditions/q/YOURZIPCODEHERE.json
+3. Sign up for a Nest Developer account at https://developers.nest.com/. Create a cloud device and go through the authorization process. Once completed you can use the Firebase API to access your nest thermostat using your authorization token. The API address to access the your Nest Thermostat is: https://firebase-apiserver08-tah01-iad01.dapi.production.nest.com:9553/devices/thermostats?auth=YOURAUTHTOKENHERE 
 
-4. Make sure you have your credentials and a bucket ready from a S3 compatible object store.
+4. Sign up for a Weather Underground account at https://www.wunderground.com/weather/api/. Go through the authorization process. Once completed you can querey your local weather station using your zip code and API key. The API address to access your local weather station is: http://api.wunderground.com/api/YOURAPIKEYHERE/features/conditions/q/YOURZIPCODEHERE.json
 
 
 ##Setup
-1. Clone the repository to your computer/server. 
+1. Clone the repository to your computer/server: ```https://github.com/ryn1727/Weather-Collector.git```
 
-2. Install Ruby v2.2 or greater.
+2. Install Ruby 2.2 or greater using RubyInstaller x86 (Windows) or RVM (Linux).
 
-3. Make sure the following gems are installed: openssl, json, aws/s3, and colorize: gem install json openssl colorize aws-s3
+3. Make sure the following gems are installed: openssl, json, aws/s3, and colorize: ```gem install json openssl colorize aws-s3```
 
 4. Update the credentials file with your Nest, Weather Underground, and S3 object store information.
 
-5. Run the script: "ruby collector.rb".
+5. Run the script: ```ruby collector.rb```
 
+##JSON File Breakdown
+Coming Soon!
 
 ##Licensing
 Copyright (c) 2016 Ryan Murphy
