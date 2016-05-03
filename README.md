@@ -6,7 +6,7 @@ This is a ruby script/application that will pull down environmental data from a 
 
 ##Installation Requirements
 
-1. Run's on any platform or operating system that has Ruby 2.2 or higher available. Tested on:  ```Windows 7, Windows 2012 R2, CentOS 7```
+1. Should run on any platform or operating system that has Ruby 2.2 or higher available. Tested on:  ```Windows 7, Windows 2012 R2, CentOS 7```
 
 2. Should work with any S3 compatible object store since a generic S3 gem is being used. Tested on:  ```Amazon Simple Storage Service (S3), EMC Elastic Cloud Storage (ECS)```
 
