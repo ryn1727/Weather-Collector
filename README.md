@@ -2,7 +2,7 @@
 This is a ruby script/application that will pull down environmental data from a Nest Thermostat and a local weather station every 5 minutes to be used for data analytics projects. The data from both sources is combined into a JSON file and stored in an S3 compatible object storage repository.
 
 ![img1](https://raw.githubusercontent.com/ryn1727/Weather-Collector/master/collector_running.JPG)
-
+![img1](https://raw.githubusercontent.com/ryn1727/Weather-Collector/master/collector_running2.JPG)
 
 ##Installation Requirements
 
