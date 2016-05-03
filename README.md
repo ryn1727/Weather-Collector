@@ -6,9 +6,9 @@ This is a ruby script/application that will pull down environmental data from a 
 
 ##Installation Requirements
 
-1. Run's on any platform or operating system that has Ruby 2.2 or higher available. Tested on Windows 7, Windows 2012 R2, CentOS 7.
+1. Run's on any platform or operating system that has Ruby 2.2 or higher available. Tested on:  ```Windows 7, Windows 2012 R2, CentOS 7```
 
-2. Should work with any S3 compatible object store since a generic S3 gem is being used. Testing with Amazon AWS S3 and EMC ECS 2.0+.
+2. Should work with any S3 compatible object store since a generic S3 gem is being used. Tested on:  ```Amazon Simple Storage Service (S3), EMC Elastic Cloud Storage (ECS)```
 
 3. Sign up for a Nest Developer account at https://developers.nest.com/. Create a cloud device and go through the authorization process. Once completed you can use the Firebase API to access your nest thermostat using your authorization token. The API address to access the your Nest Thermostat is: https://firebase-apiserver08-tah01-iad01.dapi.production.nest.com:9553/devices/thermostats?auth=YOURAUTHTOKENHERE 
 
