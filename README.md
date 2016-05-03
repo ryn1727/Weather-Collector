@@ -20,7 +20,7 @@ This is a ruby script/application that will pull down environmental data from a 
 
 2. Install Ruby v2.2 or greater.
 
-3. Make sure the following gems are installed: openssl, json, aws/s3, colorize, net/http, time.
+3. Make sure the following gems are installed: openssl, json, aws/s3, and colorize: gem install json openssl colorize aws-s3
 
 4. Update the credentials file with your Nest, Weather Underground, and S3 object store information.
 
