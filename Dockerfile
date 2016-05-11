@@ -4,7 +4,7 @@ FROM ruby:2.2.5
 ENV HOME /home/rails/webapp
 
 # Install dependencies
-RUN apt-get update -qq
+RUN apt-get update -qq && apt-get install -y vim
 
 WORKDIR $HOME
 
