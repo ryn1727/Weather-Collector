@@ -1,2 +1,2 @@
 FROM ruby:2.2.5-onbuild
-CMD ["ruby collector.rb"]
+CMD ["./ruby collector.rb"]
