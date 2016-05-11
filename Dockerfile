@@ -12,7 +12,7 @@ WORKDIR $HOME
 ADD Gemfile* $HOME/
 RUN gem install bundle
 RUN bundle install
-
+RUN gem install aws-s3 json openssl colorize
 # Add the app code
 ADD . $HOME
 
