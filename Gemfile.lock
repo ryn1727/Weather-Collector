@@ -1,0 +1,32 @@
+GIT
+  remote: https://github.com/bartoszkopinski/aws-s3
+  revision: 6d8525e5f69d4d46ff51a30ca8976c7584b68f36
+  specs:
+    aws-s3 (0.6.3)
+      builder
+      mime-types
+      xml-simple
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    builder (3.2.2)
+    colorize (0.7.7)
+    json (1.8.3)
+    mime-types (3.0)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0221)
+    openssl (0.2.0)
+    xml-simple (1.1.5)
+
+PLATFORMS
+  x86-mingw32
+
+DEPENDENCIES
+  aws-s3!
+  colorize
+  json
+  openssl
+
+BUNDLED WITH
+   1.12.3
