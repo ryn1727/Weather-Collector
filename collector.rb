@@ -109,13 +109,6 @@ loop do
       f.puts "--- Sleeping until the next data collection ---"
     end
 
-    #write log file to object store and then wipe the local file
-    log = File.read("collector.log")
-    log_name = "log_" + Time.now.utc.iso8601
-    #connect to the object store and get the container
-    AWS::S3::Base.establish_connection!(:server => credentials["s3endpoint"], :access_key_id => credentials["s3username"], :secret_access_key => credentials["s3password"])
-    S3Object.store(log_name, log.to_s, credentials["s3bucket"], :content_type => content_type)
-    File.truncate('collector.log', 0)
     sleep(interval)
   end
 end
